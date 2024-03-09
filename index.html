@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Accounting App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Accounting App</h1>
+    <div class="form">
+      <input type="text" id="description" placeholder="Description">
+      <input type="number" id="amount" placeholder="Amount">
+      <button onclick="addGivenDebt()">Given Debt</button>
+      <button onclick="addSpend()">Spend</button>
+      <button onclick="addReceived()">Received</button>
+      <button onclick="showHistory()">History</button>
+      <button onclick="clearTransactions()">Clear All</button>
+    </div>
+    <div class="transactions" id="transactions">
+      <!-- Transactions will be dynamically added here -->
+    </div>
+    <div id="balance">Balance: ₹0.00</div>
+    <h2>Weekly Transactions</h2>
+    <table id="weeklyTransactions">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Weekly transactions will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+  <!-- Include transaction history window -->
+  
+  <script src="script.js"></script>
+</body>
+</html>
